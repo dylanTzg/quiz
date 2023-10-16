@@ -7,8 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { QuestionComponent } from './question/question.component';
-import { ReponseComponent } from './reponse/reponse.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { AccueilComponent } from './accueil/accueil.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +17,8 @@ import { QuizComponent } from './quiz/quiz.component';
     HeaderComponent,
     FooterComponent,
     QuestionComponent,
-    ReponseComponent,
-    QuizComponent
+    QuizComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

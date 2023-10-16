@@ -1,1 +1,14 @@
-<p>quiz works!</p>
+
+<div>
+  <div *ngFor="let item of questions">
+    <h3>{{item.titre}}</h3>
+    <div>
+      <span *ngFor="let reponse of item.choix"><button (click)="onResponseClick(reponse,item.id)">{{reponse.texte}}</button><br></span>
+    </div>
+    <p >{{item.etat}}</p>
+  </div>
+</div>
+<div>
+  <button (click)="onSendClick()">Send</button>
+  <h2 *ngIf="isQuizFinished"> Score : {{compteur}}</h2>
+</div>
