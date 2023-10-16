@@ -1,14 +1,9 @@
-import {Component} from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class HomeComponent {
-  compteur = 0;
-  isQuizFinished = false;
-
+export class QuizService {
   quiz = [
     {
       id: 1,
@@ -100,24 +95,5 @@ export class HomeComponent {
     }
 
   ];
-
-  constructor() {
-  }
-
-  onResponseClick(choix: { texte: string, correct: boolean },id : number ) {
-    if(this.quiz[id-1].etat != "non repondu") {
-      return;
-    }
-    if (choix.correct) {
-    this.quiz[id-1].etat = "correct";
-      this.compteur++;
-    } else {
-      this.quiz[id-1].etat = "incorrect";
-    }
-  }
-
-  onSendClick() {
-    this.isQuizFinished = true;
-  }
-
+  constructor() { }
 }

@@ -1,0 +1,59 @@
+/* Style du conteneur principal */
+div {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style des titres des questions */
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+.etat {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+/* Style des boutons de réponse */
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 10vw;
+}
+
+/* Style au survol des boutons de réponse */
+button:hover {
+  background-color: white;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+/* Style du paragraphe pour afficher l'état */
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Style du conteneur principal */
+.container {
+  text-align: center;
+}
+
+/* Ajoutez d'autres styles au besoin */

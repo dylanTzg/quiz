@@ -1,7 +1,15 @@
-<p>wesh mgl</p>
-<h1>{{titre}}</h1>
-<div *ngIf="condition">
-  <ul>
-    <li *ngFor="let item of personnes">{{item}}</li>
-  </ul>
+
+<div>
+  <div *ngFor="let item of quiz">
+    <h3>{{item.titre}}</h3>
+    <div>
+      <span *ngFor="let reponse of item.choix"><button (click)="onResponseClick(reponse,item.id)">{{reponse.texte}}</button><br></span>
+    </div>
+    <p >{{item.etat}}</p>
+  </div>
 </div>
+<div>
+  <button (click)="onSendClick()">Send</button>
+  <h2 *ngIf="isQuizFinished"> Score : {{compteur}}</h2>
+</div>
+
